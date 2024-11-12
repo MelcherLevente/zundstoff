@@ -1,0 +1,28 @@
+html{
+    background-color: white;
+    width: 100%;
+}
+body{
+    margin: 0px;
+}
+#menu{
+    height: 100px;
+}
+#logo{
+    height: 100%;
+    float: left;
+    margin-left: 50px;
+}
+#fejlec_img{
+    height: auto;
+    width: 100%;
+}
+#menu li{
+    display: inline;
+    color: rgba(255, 123, 0, 0.918);
+    padding: 30px;
+}
+#menu ul{
+    float: right;
+    
+}

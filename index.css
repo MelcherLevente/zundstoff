@@ -5,6 +5,12 @@ html{
 }
 body{
     margin: 0px;
+    height: 100%;
+    line-height: 160%;
+}
+h1{
+    font-size: 240%;
+    padding: 20px;
 }
 #menu{
     height: 100px;
@@ -24,8 +30,8 @@ body{
     padding: 30px;
 }
 #menu ul{
+    display: inline;
     float: right;
-    
 }
 #header{
     background-image: url(feladat/képek/header.jpg);
@@ -36,4 +42,21 @@ body{
     color: white;
 }
 
-
+#box{
+    display: flex;
+    padding-top: 30px;
+    height: auto;
+}
+#box_video{
+    float: left;
+    width: 50%;
+    display: flex;
+}
+#box_video img{
+    width: 86%;
+    margin: auto;
+    padding-top: 110px;
+}
+#box_r{
+    width: 50%;
+}

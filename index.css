@@ -37,15 +37,26 @@ h1{
     background-image: url(feladat/képek/header.jpg);
     height: 600px;
     width: 100%;
-    background-size: cover;
-    text-align: center;
+    background-size:cover;
     color: white;
+    background-position: center;
 }
+#header_text{
+    margin: auto;
+    width: max-content;
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+strong{
+    font-size: 400%;
+}
+
 
 #box{
     display: flex;
     padding-top: 30px;
-    height: auto;
+    height: max-content;
+    padding-bottom: 50px;
 }
 #box_video{
     float: left;
@@ -53,10 +64,31 @@ h1{
     display: flex;
 }
 #box_video img{
-    width: 86%;
     margin: auto;
     padding-top: 110px;
+    width: 86%;
 }
 #box_r{
     width: 50%;
+}
+.narancs_box{
+    border: orangered solid 1px;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+    margin: auto;
+    color: orangered;
+    border-radius: 5px;
+}
+
+
+#dich{
+    background-color: rgb(196, 232, 245);
+}
+#dich_title h1,h2{
+    text-align: center;
+}
+#dich_title h1{
+    padding-top: 50px;
 }

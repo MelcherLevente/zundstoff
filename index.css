@@ -1,13 +1,16 @@
 html{
     background-color: white;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "muli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 body{
     margin: 0px;
     height: 100%;
     line-height: 160%;
 }
+
 h1{
     font-size: 240%;
     padding: 20px;
@@ -48,29 +51,28 @@ h1{
     padding: 100px 0px 100px 0px;
 }
 strong{
-    font-size: 400%;
+    font-size: 400%
 }
 
 
-#box{
-    display: flex;
-    padding-top: 30px;
-    height: max-content;
-    padding-bottom: 50px;
+#box_tart{
+    display: flex;    
+    margin: 50px;
 }
 #box_video{
-    float: left;
-    width: 50%;
-    display: flex;
+    width: 55%;
 }
 #box_video img{
-    margin: auto;
-    padding-top: 110px;
-    width: 86%;
+    padding-top: 100px;
+    width: 100%;
+    
 }
 #box_r{
-    width: 50%;
+    width: 45%;
+    padding: 0px 20px;
 }
+
+
 .narancs_box{
     border: orangered solid 1px;
     width: 120px;
@@ -88,7 +90,15 @@ strong{
 }
 #dich_title h1,h2{
     text-align: center;
+    padding: 0px;
 }
-#dich_title h1{
-    padding-top: 50px;
+#dich_tart{
+    padding: 50px;
+}
+#dich_text{
+    display: flex;
+}
+#wod, #basics, #strength{
+    padding: 20px;
+    width: 30%;
 }

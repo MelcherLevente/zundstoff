@@ -2,8 +2,8 @@ html{
     background-color: white;
     width: 100%;
     font-family: "muli", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: rgb(50, 50, 50);
+    font-size: 16px;
 }
 body{
     margin: 0px;
@@ -49,11 +49,15 @@ h1{
     width: max-content;
     text-align: center;
     padding: 100px 0px 100px 0px;
+    line-height: 30px;
 }
 strong{
-    font-size: 400%
+    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
 }
-
+h1,h2,h3,h4{
+    font-family: "Montserrat", sans-serif;
+}
 
 #box_tart{
     display: flex;    
@@ -74,7 +78,7 @@ strong{
 
 
 .narancs_box{
-    border: orangered solid 1px;
+    border: orangered solid 2px;
     width: max-content;
     text-align: center;
     padding: 15px;
@@ -92,26 +96,34 @@ strong{
     text-align: center;
     padding: 0px;
 }
+#dich_title h2{
+    font-size: 30px;
+}
 #dich_tart{
     padding: 50px;
 }
 #dich_text{
     display: flex;
 }
+#dich_text h2{
+    text-align: left;
+    color: orangered;
+    font-size: 30px;
+}
 #wod, #basics, #strength{
     padding: 20px;
     width: 30%;
 }
 
-#train_tart{
+#train_tart, #miss_tart{
     display: flex;
     padding: 20px;
 }
-#train_img{
+#train_img, #miss_img{
     width: 35%;
     margin: auto;
 }
-#train_r{
+#train_r, #miss_r{
     width: 50%;
 }
 #training li{
@@ -153,9 +165,11 @@ strong{
     color: white;
     text-align: center;
     align-items: center;
+    height: 500px;
 }
-#osztl, #oszt_c, #oszt_r{
-    width: 33%;
+#oszt_l, #oszt_c, #oszt_r{
+    width: 100%;
+    height: 100%;
 }
 #oszt_l{
     background-image: url(feladat/képek/start.jpg);
@@ -165,4 +179,46 @@ strong{
 }
 #oszt_r{
     background-image: url(feladat/képek/tartos.jpg);
+}
+#oszt_l_t, #oszt_c_t, #oszt_r_t{
+    padding: 20px;
+}
+#oszt_l_t li, #oszt_c_t li, #oszt_r_t li, #header li{
+    color: white;
+    border-color: white;
+}
+
+
+#lablec_u{
+    background-image: url(feladat/képek/header.jpg);
+    color: white;
+    text-align: center;
+    height: 250px;
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+}
+#lablec_u_tart{
+    padding: 20px;
+}
+#lablec_d_tart{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+#lab_l, #lab_c, #lab_r{
+    width: 30%;
+    padding: 20px;
+}
+
+
+#lablec_veg{
+    padding: 10px;
+    color: orangered;
+    text-align: center;
+    background: rgb(54, 54, 54);
+    height: 100px;
+}
+#folge_img img{
+    width: 60px;
 }

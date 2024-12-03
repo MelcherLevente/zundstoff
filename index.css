@@ -16,12 +16,13 @@ h1{
     padding: 20px 0px;
 }
 #menu{
+    display: flex;
     height: 100px;
+    margin: 0px 80px;
 }
 #logo{
     height: 100%;
     float: left;
-    margin-left: 50px;
 }
 #fejlec_img{
     height: auto;
@@ -104,6 +105,7 @@ h1,h2,h3,h4{
 }
 #dich_text{
     display: flex;
+
 }
 #dich_text h2{
     text-align: left;

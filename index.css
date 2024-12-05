@@ -36,6 +36,8 @@ h1{
 #menu ul{
     display: inline;
     float: right;
+    align-content: center;
+    margin-bottom: 0px;
 }
 #header{
     background-image: url(feladat/képek/header.jpg);
@@ -65,12 +67,13 @@ h1,h2,h3,h4{
     margin: 50px;
 }
 #box_video{
-    width: 55%;
+    max-width: 53%;
+    height: max-content;
+    vertical-align: middle; 
 }
 #box_video img{
-    padding-top: 100px;
     width: 100%;
-    
+    height: 100%;
 }
 #box_r{
     width: 45%;
@@ -105,7 +108,7 @@ h1,h2,h3,h4{
 }
 #dich_text{
     display: flex;
-
+    justify-content: center;
 }
 #dich_text h2{
     text-align: left;
@@ -119,11 +122,14 @@ h1,h2,h3,h4{
 
 #train_tart, #miss_tart{
     display: flex;
-    padding: 20px;
+    margin: 20px 50px;
 }
 #train_img, #miss_img{
-    width: 35%;
+    width: max-content;
     margin: auto;
+}
+#train_img img, #miss_img img{
+    width: 100%;
 }
 #train_r, #miss_r{
     width: 50%;
@@ -205,11 +211,11 @@ h1,h2,h3,h4{
 }
 #lablec_d_tart{
     display: flex;
-    padding: 20px;
+    padding: 30px 60px;
     justify-content: center;
 }
 #lab_l, #lab_c, #lab_r{
-    width: 30%;
+    width: 33%;
     padding: 20px;
 }
 
@@ -221,6 +227,26 @@ h1,h2,h3,h4{
     background: rgb(54, 54, 54);
     height: 100px;
 }
+#folge_img{
+
+    width: 100%;
+}
 #folge_img img{
     width: 60px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 850px){
+    #box_tart, #dich_text, #miss_tart, #train_tart, #preise_tart, #preise_bot{
+        display: block;
+        margin: 30px 0px;
+        
+    }
+    #box_video, #box_r, #train_img, #train_r, #miss_img, #miss_r, #preise_l, #preise_c, #preise_r{
+        margin: auto;
+        width: 80%;
+        padding: 30px 0px;
+    }
+    #wod, #basics, #strength{
+        width: 100%;
+    }
 }

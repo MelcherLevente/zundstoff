@@ -46,6 +46,7 @@ h1{
     background-size:cover;
     color: white;
     background-position: center;
+    display: flex;
 }
 #header_text{
     margin: auto;
@@ -129,9 +130,6 @@ h1,h2,h3,h4{
     width: max-content;
     margin: auto;
 }
-#train_img img, #miss_img img{
-    width: 100%;
-}
 #train_r, #miss_r{
     width: 50%;
 }
@@ -202,7 +200,7 @@ h1,h2,h3,h4{
     background-image: url(feladat/képek/header.jpg);
     color: white;
     text-align: center;
-    height: 250px;
+    height: max-content;
     background-position: center center;
     width: 100%;
     background-size: cover;
@@ -236,31 +234,134 @@ h1,h2,h3,h4{
     margin: 0px 20px;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 850px){
-    #box_tart, #dich_text, #miss_tart, #train_tart, #preise_tart, #preise_bot{
+@media only screen and (min-width: 300px) and (max-width: 850px){
+    #box_tart, #miss_tart{
         display: block;
-        margin: 30px 0px; 
+        margin: 20px 0px; 
+        height: max-content;
     }
-    #box_video, #box_r, #train_img, #train_r, #miss_img, #miss_r, #preise_l, #preise_c, #preise_r{
+    #box_r, #dich_text, #miss_tart{
+        margin: auto;
+        width: 65%;
+        max-width: 80%;
+        padding: 30px 0px;
+    }
+    #box_video{
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        margin: 30px auto;
+        max-width: 65%;
+    }
+    
+    #box_video img, #train_img img, #miss_img img{
+        max-width: 100%;
+        float: none;
+    }
+    #box_li{
+        margin: 50px auto;
+    }
+
+    #dich_tart{
+        padding: 50px 0px;
+    }
+    #dich_text{
+        display: block;
+    }
+    #wod, #basics, #strength{
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+
+
+    #train_tart{
+        display: block;
+        height: max-content;
+    }
+    #train_img{
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        margin: 30px auto;
+        max-width: 75%;
+    }
+    #train_r{
         margin: auto;
         width: 75%;
         max-width: 80%;
         padding: 30px 0px;
+    }
+    #train_li{
         
     }
-    #box_video, #train_img{
+
+    #preise_top, #preise_bot{
+        width: 75%;
+        margin: auto;
+    }
+    #preise_bot{
+        display: block;
+    }
+    #preise_l, #preise_c, #preise_r{
+        padding: 15px 0px;
+        width: 100%;
+    }
+    #miss_r{
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 0px;
+        margin: 0px;
+    }
+    #miss_img{
         display: flex;
         height: fit-content;
         justify-content: center;
+        margin: 30px auto;
+        max-width: 85%;
     }
-    #box_r, #train_r{
-        width: 60%;
+
+
+    #osztott{
+        height: max-content;
+        display: block;
     }
-    #box_video img, #train_img img{
+    #oszt_l, #oszt_c, #oszt_r{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150%;
+        margin: 3px 0px;
+        background-position: center center;
+        padding: 20px;
+    }
+
+
+    #lablec_u_tart{
         width: 75%;
-        float: none;
+        margin: auto;
+        padding: 50px;
     }
-    #wod, #basics, #strength{
+    #lablec_d_tart{
+        display: block;
+        width: 75%;
+        margin: auto;
+    }
+    #lab_l, #lab_c, #lab_r{
         width: 100%;
     }
+    #folge_img img{
+        display: block;
+        margin: 50px 0px;
+    }
+    #lablec_veg p{
+        width: 75%;
+        margin: auto;
+    }
 }
+
+@media only screen and (min-width: 300px) and (max-width: 1280px){
+    
+}
+
+

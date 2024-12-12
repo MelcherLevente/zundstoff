@@ -18,15 +18,19 @@
             <div id="menu">
                 <img src="feladat/képek/logo.png" id="logo">
                 <ul>
-                    <li>home</li>
-                    <li>angebot</li>
-                    <li>preise</li>
-                    <li>kurse</li>
-                    <li>trainer</li>
-                    <li>übungen</li>
-                    <li>kontakt</li>
-                    <li>Free Intro</li>
+                    <div id="mySidepanel" class="sidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <li>home</li>
+                        <li>angebot</li>
+                        <li>preise</li>
+                        <li>kurse</li>
+                        <li>trainer</li>
+                        <li>übungen</li>
+                        <li>kontakt</li>
+                        <li>Free Intro</li>
+                    </div>
                 </ul>
+                <button class="openbtn" onclick="openNav()">&#9776; </button>
             </div>
             <div id="header">
                 <div id="header_text">
@@ -53,9 +57,12 @@
                     Das alles machst du mit hochwertiger Ausstattung und unter professioneller Anleitung. Kein Schnickschnack.
                     Neugierig? Komm vorbei!</p>
                     
-                    <p>Hier ist zündstoff. </p>
-                    <li class="narancs_box">Mehr erfahren</li>
+                    <p>Hier ist zündstoff. </p>  
+                    <div id="box_li">
+                        <li class="narancs_box">Mehr erfahren</li>
+                    </div>
                 </div>
+                
             </div>
         </div>
         <div id="dich">
@@ -95,8 +102,11 @@
                     Du dokumentierst deine Ergebnisse und Zeiten in einer App (wir nutzen SugarWOD). Damit werden auch kleine Veränderungen sichtbar. <br>
                     Jedes Training kann an jedes Fitnesslevel angepasst werden. So ist es möglich, verschiedene Level in einer Gruppe zu trainieren und gemeinsam das Workout zu beenden. High Five für alle. Der Letzte bekommt den lautesten Applaus. Du bist nicht allein. <br>
                     Das ist CrossFit. Das ist zündstoff.</p>
-                    <li class="narancs_box">zu den Übungen</li>
+                    <div id="train_li">
+                        <li class="narancs_box">zu den Übungen</li>
+                    </div>
                 </div>
+                
             </div>
         </div>
         <div id="preise">
@@ -166,17 +176,15 @@
                     <h1>mission</h1>
                     <p>Bleib gesund! Das hört man sehr oft. Gesundheit ist vielleicht das höchste Gut. Aber was bedeutet das? Bedeutet gesund sein gerade keinen Schnupfen zu haben? Oder bedeutet es mehr?<br>Wir glauben, zum gesund sein gehört etwas mehr - mehr als nur gerade keine Krankheit zu haben. Wir glauben dazu gehört auch sich wohlzufühlen, zufrieden mit sich zu sein, sich stark zu fühlen.<br> Die Steigerung ist Fitness: das Gefühl gewappnet zu sein, für was auch immer da kommen mag. Zu keiner Zeit im Leben wird uns das geschenkt. Wir müssen etwas dafür tun. Auch im hohen Alter. Ausgewogene Ernährung und Bewegung - das würde wohl jeder raten. <br>Du willst die U-Bahn Treppe hochgehen, ohne danach eine Pause zu brauchen? Du willst ohne Stöhnen von der Couch aufstehen? Du willst auch mit 80+ ohne Hilfe vom Klo aufstehen? Was hält dich zurück? Fang jetzt an.</p>
                     <p>Hier ist zündstoff.</p>
-                    <li class="narancs_box">zu den Übungen</li>
+                    <li class="narancs_box">buche dein Free Intro</li>
                 </div>
             </div>
         </div>
         <div id="lablec_u">
-            <div id="lablec_img">
-                <div id="lablec_u_tart">
-                    <h1>nach der pandemie</h1>
-                    <p>Wir achten weiterhin auf Abstand und reinigen nach jedem Training unser Equipment.</p>
-                    <p>Komm bitte nur zum Training, wenn du dich gesund fühlst.</p>
-                </div>
+            <div id="lablec_u_tart">
+                <h1>nach der pandemie</h1>
+                <p>Wir achten weiterhin auf Abstand und reinigen nach jedem Training unser Equipment.</p>
+                <p>Komm bitte nur zum Training, wenn du dich gesund fühlst.</p>
             </div>
         </div>
         <div id="lablec_d">

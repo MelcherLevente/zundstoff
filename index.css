@@ -10,7 +10,9 @@ body{
     height: 100%;
     line-height: 160%;
 }
-
+a.closebtn, button.openbtn{
+    visibility: hidden;
+}
 h1{
     font-size: 240%;
     padding: 20px 0px;
@@ -20,7 +22,10 @@ h1{
     height: 130px;
     margin: 0px 80px;
     align-items: center;
-    justify-content: center;
+    width: 80%;
+}
+#menu_intro_md_in, #menu_intro_md_out{
+    visibility: hidden;
 }
 #logo{
     height: 100px;
@@ -253,7 +258,12 @@ h1,h2,h3,h4{
         margin: 30px auto;
         max-width: 65%;
     }
-    
+    #menu_intro_md_in, #menu_intro_md_out{
+        visibility: visible;
+    }
+    #menu_intro_lg{
+        visibility: hidden;
+    }
     #box_video img, #train_img img, #miss_img img{
         max-width: 100%;
         float: none;
@@ -361,7 +371,54 @@ h1,h2,h3,h4{
 }
 
 @media only screen and (min-width: 300px) and (max-width: 1280px){
-    
+    a.closebtn, button.openbtn{
+        visibility: visible;
+    }
+    .sidepanel  {
+        max-width: 20%;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: #302c2c;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      #mySidepanel li {
+        padding: 8px 8px 8px 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidepanel li:hover {
+        color: #888787;
+      }
+      
+      .sidepanel .closebtn {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        font-size: 36px;
+      }
+      
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #161616;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+      }
+      
+      .openbtn:hover {
+        background-color:#444;
+      }
 }
 
 

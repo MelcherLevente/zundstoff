@@ -21,6 +21,7 @@
                 <ul>
                     <div id="mySidepanel" class="sidepanel">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <li id="menu_intro_md_in">Free Intro</li>
                         <li>home</li>
                         <li>angebot</li>
                         <li>preise</li>
@@ -28,9 +29,10 @@
                         <li>trainer</li>
                         <li>übungen</li>
                         <li>kontakt</li>
-                        <li>Free Intro</li>
+                        <li id="menu_intro_lg">Free Intro</li>
                     </div>
                 </ul>
+                <li id="menu_intro_md_out">Free Intro</li>
                 <button class="openbtn" onclick="openNav()">&#9776; </button>
             </div>
             <div id="header">
@@ -212,5 +214,15 @@
             <p>AGB | Impressum | Datenschultzerklärung | Logo- & Webdesign von Lisa Koch</p>
         </div>
     </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "100%";
+          }
+          
+          /* Close when someone clicks on the "x" symbol inside the overlay */
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0%";
+          }
+    </script>
 </body>
 </html>

@@ -25,7 +25,7 @@ h1{
     /*position: absolute;
     left: -999em; */
 }
-a.closebtn, button.openbtn{
+a.closebtn, button.openbtn, #menu_intro_md_in, #menu_intro_md_out{
     display: none;
 }
 #logo{
@@ -373,7 +373,7 @@ h1,h2,h3,h4{
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 1300px){
+@media only screen and (min-width: 300px) and (max-width: 1200px){
     a.closebtn, button.openbtn{
         visibility: visible;
     }
@@ -425,6 +425,9 @@ h1,h2,h3,h4{
       .openbtn:hover {
         background-color:#444;
       }
+      a.closebtn, button.openbtn, #menu_intro_md_in, #menu_intro_md_out{
+        display: contents;
+    }
 }
 @media only screen and (min-width: 300px) and (max-width: 750px){
     #menu{
@@ -432,6 +435,31 @@ h1,h2,h3,h4{
     }
     #logo{
         height: 50px;
+    }
+    #menu_intro_md_out{
+        display: none;
+    }
+    #menu_intro_md_in{
+        text-align: center;
+    }
+    #box_video, #train_img, #miss_img{
+        max-width: 90%;
+    }
+    #box_r, #dich_text, #train_r, #preise_top, #preise_bot, #miss_tart, #lablec_u_tart{
+        width: 85%;
+        max-width: 85%;
+    }
+    #train_tart, #miss_img, #miss_tart{
+        margin: 0px auto;
+    }
+    #oszt_l, #oszt_c, #oszt_r{
+        padding: 0px;
+    }
+    #lablec_u_tart{
+        padding: 15px;
+    }
+    #lablec_d_tart{
+        padding: 30px 0px;
     }
 }
 

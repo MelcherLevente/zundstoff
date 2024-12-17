@@ -10,9 +10,6 @@ body{
     height: 100%;
     line-height: 160%;
 }
-a.closebtn, button.openbtn{
-    visibility: hidden;
-}
 h1{
     font-size: 240%;
     padding: 20px 0px;
@@ -20,12 +17,16 @@ h1{
 #menu{
     display: flex;
     height: 130px;
-    margin: 0px 80px;
+    margin: auto;
     align-items: center;
     width: 80%;
 }
-#menu_intro_md_in, #menu_intro_md_out{
-    visibility: hidden;
+#menu_intro_md_in, #menu_intro_md_out, a.closebtn, button.openbtn{
+    /*position: absolute;
+    left: -999em; */
+}
+a.closebtn, button.openbtn{
+    display: none;
 }
 #logo{
     height: 100px;
@@ -39,6 +40,9 @@ h1{
     display: inline;
     color: rgba(255, 123, 0, 0.918);
     padding: 20px;
+}
+#menu_intro_lg{
+    color: #888787;
 }
 #menu ul{
     align-content: center;
@@ -238,7 +242,6 @@ h1,h2,h3,h4{
     width: 60px;
     margin: 0px 20px;
 }
-
 @media only screen and (min-width: 300px) and (max-width: 850px){
     #box_tart, #miss_tart{
         display: block;
@@ -370,12 +373,15 @@ h1,h2,h3,h4{
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 1280px){
+@media only screen and (min-width: 300px) and (max-width: 1300px){
     a.closebtn, button.openbtn{
         visibility: visible;
     }
+    #menu_intro_md_out{
+        visibility: visible;
+    }
     .sidepanel  {
-        max-width: 20%;
+        max-width: 40%;
         position: fixed;
         z-index: 1;
         height: 100%;
@@ -419,6 +425,14 @@ h1,h2,h3,h4{
       .openbtn:hover {
         background-color:#444;
       }
+}
+@media only screen and (min-width: 300px) and (max-width: 750px){
+    #menu{
+        height: 50px;
+    }
+    #logo{
+        height: 50px;
+    }
 }
 
 

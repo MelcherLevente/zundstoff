@@ -142,10 +142,9 @@ h1,h2,h3,h4{
 #train_r, #miss_r{
     width: 50%;
 }
-#training li{
-    float: left;
+#train_r li{
+    margin: 20px 0px;
 }
-
 
 #preise{
     background-color: rgb(196, 232, 245);

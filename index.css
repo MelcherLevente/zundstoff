@@ -5,6 +5,9 @@ html{
     color: rgb(50, 50, 50);
     font-size: 16px;
 }
+a.closebtn, button.openbtn{
+    display: none;
+}
 body{
     margin: 0px;
     height: 100%;
@@ -20,13 +23,6 @@ h1{
     margin: auto;
     align-items: center;
     width: 80%;
-}
-#menu_intro_md_in, #menu_intro_md_out, a.closebtn, button.openbtn{
-    /*position: absolute;
-    left: -999em; */
-}
-a.closebtn, button.openbtn, #menu_intro_md_in, #menu_intro_md_out{
-    display: none;
 }
 #logo{
     height: 100px;
@@ -102,7 +98,10 @@ h1,h2,h3,h4{
     color: orangered;
     border-radius: 5px;
 }
-
+.narancs_box:hover{
+    background-color: orangered;
+    color: white;
+}
 
 #dich{
     background-color: rgb(196, 232, 245);
@@ -239,7 +238,7 @@ h1,h2,h3,h4{
 }
 #folge_img img{
     width: 60px;
-    margin: 0px 20px;
+    margin: 0px 10px;
 }
 @media only screen and (min-width: 300px) and (max-width: 850px){
     #box_tart, #miss_tart{
@@ -259,12 +258,6 @@ h1,h2,h3,h4{
         justify-content: center;
         margin: 30px auto;
         max-width: 65%;
-    }
-    #menu_intro_md_in, #menu_intro_md_out{
-        visibility: visible;
-    }
-    #menu_intro_lg{
-        visibility: hidden;
     }
     #box_video img, #train_img img, #miss_img img{
         max-width: 100%;
@@ -304,10 +297,6 @@ h1,h2,h3,h4{
         max-width: 80%;
         padding: 30px 0px;
     }
-    #train_li{
-        
-    }
-
     #preise_top, #preise_bot{
         width: 75%;
         margin: auto;
@@ -373,14 +362,8 @@ h1,h2,h3,h4{
 }
 
 @media only screen and (min-width: 300px) and (max-width: 1200px){
-    a.closebtn, button.openbtn{
-        visibility: visible;
-    }
-    #menu_intro_md_out{
-        visibility: visible;
-    }
     .sidepanel  {
-        max-width: 40%;
+        width: 30%;
         position: fixed;
         z-index: 1;
         height: 100%;
@@ -391,7 +374,12 @@ h1,h2,h3,h4{
         transition: 0.5s;
         padding-top: 60px;
       }
-      
+      #menu{
+        justify-content: space-between;
+      }
+      #folge_img{
+        width: max-content
+      }
       #mySidepanel li {
         padding: 8px 8px 8px 50px;
         text-decoration: none;
@@ -413,19 +401,18 @@ h1,h2,h3,h4{
       }
       
       .openbtn {
-        font-size: 20px;
+        font-size: 30px;
         cursor: pointer;
-        background-color: #161616;
-        color: white;
+        background-color: transparent;
+        color: orangered;
         padding: 10px 15px;
         border: none;
       }
-      
-      .openbtn:hover {
-        background-color:#444;
-      }
-      a.closebtn, button.openbtn, #menu_intro_md_in, #menu_intro_md_out{
-        display: contents;
+      a.closebtn, button.openbtn{
+        display: inline;
+    }
+    button.openbtn, #menu_intro{
+        justify-self: flex-end;
     }
 }
 @media only screen and (min-width: 300px) and (max-width: 750px){
@@ -434,12 +421,6 @@ h1,h2,h3,h4{
     }
     #logo{
         height: 50px;
-    }
-    #menu_intro_md_out{
-        display: none;
-    }
-    #menu_intro_md_in{
-        text-align: center;
     }
     #box_video, #train_img, #miss_img{
         max-width: 90%;

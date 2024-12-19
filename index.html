@@ -17,23 +17,28 @@
     <div id="fokeret">
         <div id="fejlec">
             <div id="menu">
-                <img src="feladat/képek/logo.png" id="logo">
-                <ul>
-                    <div id="mySidepanel" class="sidepanel">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <li id="menu_intro_md_in">Free Intro</li>
-                        <li>home</li>
-                        <li>angebot</li>
-                        <li>preise</li>
-                        <li>kurse</li>
-                        <li>trainer</li>
-                        <li>übungen</li>
-                        <li>kontakt</li>
-                        <li id="menu_intro_lg">Free Intro</li>
-                    </div>
-                </ul>
-                <button class="openbtn" onclick="openNav()">&#9776; </button>
-                <li id="menu_intro_md_out">Free Intro</li>
+                <div id="menu_l">
+                    <img src="feladat/képek/logo.png" id="logo">
+                </div>
+                <div id="menu_r">
+                    <ul>
+                        <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <li>home</li>
+                            <li>angebot</li>
+                            <li>preise</li>
+                            <li>kurse</li>
+                            <li>trainer</li>
+                            <li>übungen</li>
+                            <li>kontakt</li>
+                            <li id="menu_intro">Free Intro</li>                        
+                        </div>
+                    </ul>
+                    <button class="openbtn" onclick="openNav()">&#9776; </button>
+                    
+                </div>
+                
+            </div>
             </div>
             <div id="header">
                 <div id="header_text">
@@ -214,7 +219,7 @@
     </div>
     <script>
         function openNav() {
-            document.getElementById("mySidepanel").style.width = "100%";
+            document.getElementById("mySidepanel").style.width = "30%";
           }
           
           /* Close when someone clicks on the "x" symbol inside the overlay */
